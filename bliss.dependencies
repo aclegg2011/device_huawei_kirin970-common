@@ -2,6 +2,7 @@
   {
     "repository":  "proprietary_vendor_huawei",
     "target_path": "vendor/huawei",
-    "remote":      "aoscp"
+    "revision":    "p9.0",
+    "remote":      "BlissRoms-Vendor"
   }
 ]
