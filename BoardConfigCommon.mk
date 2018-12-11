@@ -83,3 +83,6 @@ TARGET_LD_SHIM_LIBS := \
 
 # LLVN
 TARGET_USE_SDCLANG := true
+
+# vintf
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(VENDOR_PATH)/framework_manifest.xml
