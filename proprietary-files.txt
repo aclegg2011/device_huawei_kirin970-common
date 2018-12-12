@@ -2,6 +2,10 @@
 lib/libc_secshared.so
 lib64/libc_secshared.so
 
+# Display engine
+lib/libc_secshared.so
+lib64/libc_secshared.so
+
 # Display engine @ 1.0
 bin/displayengineserver:bin/displayengineserver@1.0|72dc892140456b1846ca845df1fee3b070cc0955
 lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_0.so|dcab90c973ed63249ae0f8a482de5246daaedb2e
