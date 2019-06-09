@@ -26,7 +26,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a15
@@ -61,7 +61,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 16777216
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
 # Radio
-#TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Recovery
 #BOARD_PROVIDES_BOOTLOADER_MESSAGE := true
@@ -76,8 +76,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/lib64/libdisplayenginesvc_1_0.so|libshims_hwsmartdisplay_jni.so \
-    /system/lib64/libdisplayenginesvc_1_1.so|libshims_hwsmartdisplay_jni.so \
+    /system/lib64/libdisplayengineservice.so|libshims_hwsmartdisplay_jni.so \
     /system/lib64/libhwsmartdisplay_jni.so|libshims_hwsmartdisplay_jni.so \
     /vendor/bin/hw/vendor.huawei.hardware.hisupl@1.0-service|libshims_hisupl.so
 
